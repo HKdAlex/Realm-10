@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,16 +11,24 @@
 		FA8F36C525C09CE6000CC24B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F36C425C09CE6000CC24B /* ViewController.swift */; };
 		FA8F36C725C09CF1000CC24B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8F36C625C09CF1000CC24B /* Assets.xcassets */; };
 		FA8F36CA25C09CF1000CC24B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8F36C825C09CF1000CC24B /* Main.storyboard */; };
+		FA8F36DA25C0AD47000CC24B /* RealmClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F36D925C0AD47000CC24B /* RealmClasses.swift */; };
+		FA8F36DD25C0AE47000CC24B /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F36DC25C0AE47000CC24B /* Functions.swift */; };
+		FA8F36E025C0AE7B000CC24B /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F36DF25C0AE7B000CC24B /* RealmManager.swift */; };
+		FA8F36E825C0B721000CC24B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FA8F36E725C0B721000CC24B /* Realm */; };
+		FA8F36EA25C0B721000CC24B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA8F36E925C0B721000CC24B /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA8F36BF25C09CE6000CC24B /* Realm 5.5.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Realm 5.5.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8F36BF25C09CE6000CC24B /* Realm 10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Realm 10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8F36C225C09CE6000CC24B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA8F36C425C09CE6000CC24B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA8F36C625C09CF1000CC24B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA8F36C925C09CF1000CC24B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA8F36CB25C09CF1000CC24B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA8F36CC25C09CF1000CC24B /* Realm_5_5_0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Realm_5_5_0.entitlements; sourceTree = "<group>"; };
+		FA8F36CC25C09CF1000CC24B /* Realm_10.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Realm_10.entitlements; sourceTree = "<group>"; };
+		FA8F36D925C0AD47000CC24B /* RealmClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmClasses.swift; sourceTree = "<group>"; };
+		FA8F36DC25C0AE47000CC24B /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		FA8F36DF25C0AE7B000CC24B /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8F36EA25C0B721000CC24B /* RealmSwift in Frameworks */,
+				FA8F36E825C0B721000CC24B /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +47,7 @@
 		FA8F36B625C09CE6000CC24B = {
 			isa = PBXGroup;
 			children = (
-				FA8F36C125C09CE6000CC24B /* Realm 5.5.0 */,
+				FA8F36C125C09CE6000CC24B /* Realm 10 */,
 				FA8F36C025C09CE6000CC24B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,12 +55,12 @@
 		FA8F36C025C09CE6000CC24B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA8F36BF25C09CE6000CC24B /* Realm 5.5.0.app */,
+				FA8F36BF25C09CE6000CC24B /* Realm 10.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA8F36C125C09CE6000CC24B /* Realm 5.5.0 */ = {
+		FA8F36C125C09CE6000CC24B /* Realm 10 */ = {
 			isa = PBXGroup;
 			children = (
 				FA8F36C225C09CE6000CC24B /* AppDelegate.swift */,
@@ -58,17 +68,20 @@
 				FA8F36C625C09CF1000CC24B /* Assets.xcassets */,
 				FA8F36C825C09CF1000CC24B /* Main.storyboard */,
 				FA8F36CB25C09CF1000CC24B /* Info.plist */,
-				FA8F36CC25C09CF1000CC24B /* Realm_5_5_0.entitlements */,
+				FA8F36CC25C09CF1000CC24B /* Realm_10.entitlements */,
+				FA8F36D925C0AD47000CC24B /* RealmClasses.swift */,
+				FA8F36DC25C0AE47000CC24B /* Functions.swift */,
+				FA8F36DF25C0AE7B000CC24B /* RealmManager.swift */,
 			);
-			path = "Realm 5.5.0";
+			path = "Realm 10";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA8F36BE25C09CE6000CC24B /* Realm 5.5.0 */ = {
+		FA8F36BE25C09CE6000CC24B /* Realm 10 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA8F36CF25C09CF1000CC24B /* Build configuration list for PBXNativeTarget "Realm 5.5.0" */;
+			buildConfigurationList = FA8F36CF25C09CF1000CC24B /* Build configuration list for PBXNativeTarget "Realm 10" */;
 			buildPhases = (
 				FA8F36BB25C09CE6000CC24B /* Sources */,
 				FA8F36BC25C09CE6000CC24B /* Frameworks */,
@@ -78,9 +91,13 @@
 			);
 			dependencies = (
 			);
-			name = "Realm 5.5.0";
+			name = "Realm 10";
+			packageProductDependencies = (
+				FA8F36E725C0B721000CC24B /* Realm */,
+				FA8F36E925C0B721000CC24B /* RealmSwift */,
+			);
 			productName = "Realm 5.5.0";
-			productReference = FA8F36BF25C09CE6000CC24B /* Realm 5.5.0.app */;
+			productReference = FA8F36BF25C09CE6000CC24B /* Realm 10.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FA8F36BA25C09CE6000CC24B /* Build configuration list for PBXProject "Realm 5.5.0" */;
+			buildConfigurationList = FA8F36BA25C09CE6000CC24B /* Build configuration list for PBXProject "Realm 10" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -106,11 +123,14 @@
 				Base,
 			);
 			mainGroup = FA8F36B625C09CE6000CC24B;
+			packageReferences = (
+				FA8F36E625C0B721000CC24B /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = FA8F36C025C09CE6000CC24B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA8F36BE25C09CE6000CC24B /* Realm 5.5.0 */,
+				FA8F36BE25C09CE6000CC24B /* Realm 10 */,
 			);
 		};
 /* End PBXProject section */
@@ -133,7 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8F36C525C09CE6000CC24B /* ViewController.swift in Sources */,
+				FA8F36DA25C0AD47000CC24B /* RealmClasses.swift in Sources */,
+				FA8F36E025C0AE7B000CC24B /* RealmManager.swift in Sources */,
 				FA8F36C325C09CE6000CC24B /* AppDelegate.swift in Sources */,
+				FA8F36DD25C0AE47000CC24B /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,17 +294,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Realm 5.5.0/Realm_5_5_0.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Realm 10/Realm_10.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C59XPK756L;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Realm 5.5.0/Info.plist";
+				INFOPLIST_FILE = "Realm 10/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hkdalex.Realm-5-5-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hkdalex.Realm-10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -292,17 +315,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Realm 5.5.0/Realm_5_5_0.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Realm 10/Realm_10.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C59XPK756L;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Realm 5.5.0/Info.plist";
+				INFOPLIST_FILE = "Realm 10/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hkdalex.Realm-5-5-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hkdalex.Realm-10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -311,7 +334,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA8F36BA25C09CE6000CC24B /* Build configuration list for PBXProject "Realm 5.5.0" */ = {
+		FA8F36BA25C09CE6000CC24B /* Build configuration list for PBXProject "Realm 10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA8F36CD25C09CF1000CC24B /* Debug */,
@@ -320,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA8F36CF25C09CF1000CC24B /* Build configuration list for PBXNativeTarget "Realm 5.5.0" */ = {
+		FA8F36CF25C09CF1000CC24B /* Build configuration list for PBXNativeTarget "Realm 10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA8F36D025C09CF1000CC24B /* Debug */,
@@ -330,6 +353,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA8F36E625C0B721000CC24B /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA8F36E725C0B721000CC24B /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8F36E625C0B721000CC24B /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		FA8F36E925C0B721000CC24B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8F36E625C0B721000CC24B /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA8F36B725C09CE6000CC24B /* Project object */;
 }
